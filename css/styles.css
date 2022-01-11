@@ -123,7 +123,6 @@ img {
 
     .hero {
         text-align: center;
-        /*background-color: #2F303A;*/
         max-width: 1600px; 
         height: 600px;
         margin-left: auto;
@@ -131,6 +130,7 @@ img {
         padding-top: 200px;
         padding-bottom: 200px;
 
+        background-color: #2F303A;
         background-image: 
         linear-gradient(to right, 
             rgba(47, 48, 58, 0.4),
@@ -138,8 +138,6 @@ img {
         url(../images/box4.jpg);
 
         background-size: contain;
-     
-
     }
 
     h1 {margin-top: 0;}
@@ -194,6 +192,32 @@ img {
     /*Features*/
 
     .feature.section {padding-bottom: 0;}
+
+    .item-feature::before {
+        display: block;
+        content: "";
+        margin-bottom: 30px;
+
+        height: 120px;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #F5F4FA;
+        border-radius: 4px;
+    }
+
+    .item-feature:nth-child(1)::before{        
+        background-image: url(../images/antenna.svg);}
+
+    .item-feature:nth-child(2)::before{
+        background-image: url(../images/clock.svg);}
+
+    .item-feature:nth-child(3)::before{
+        background-image: url(../images/computer.svg);}
+
+    .item-feature:nth-child(4)::before{
+        background-image: url(../images/astronaut.svg);}
+
 
     .feature .list {
         display: flex;
