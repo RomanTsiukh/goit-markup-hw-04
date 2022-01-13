@@ -103,7 +103,8 @@ img {
     .site-nav .link:focus
     {color: var(--accent-color);}
 
-    .site-nav.list {margin-left: 93px;}
+    .site-nav.list {margin-left: 93px;
+        align-items: center;}
 
     /*Header_contacts*/
 
@@ -118,6 +119,7 @@ img {
     .contacts.list {
         display: flex;
         margin-left: auto;
+        align-items: center;
     }
 
     .contacts .item + .item {margin-left: 50px;}
