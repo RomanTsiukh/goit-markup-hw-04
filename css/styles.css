@@ -85,7 +85,7 @@ img {
         align-items: center;}
 
     .site-nav .link {
-        display: block;
+        display: flex;
         padding-top: 32px;
         padding-bottom: 32px;
 
@@ -103,14 +103,18 @@ img {
     .site-nav .link:focus
     {color: var(--accent-color);}
 
-    .site-nav.list {margin-left: 93px;
+    .site-nav.list {
+        margin-left: 93px;
         align-items: center;}
 
     /*Header_contacts*/
 
     .contacts  .link {
+        display: flex;
         text-decoration: none;
-        color: var(--primary-text-color);}
+        color: var(--primary-text-color);
+        align-items: center;
+    }
 
     .contacts  .link:hover,
     .contacts  .link:focus
@@ -122,31 +126,16 @@ img {
         align-items: center;
     }
 
-    .contacts .item + .item {margin-left: 50px;}
-
-    /*.header .contacts .icon-envelope {
-        display: inline-block;
-        width: 16px;
-        height: 12px;
+    .contacts .item .icon {
         margin-right: 10px;
-        text-align: center;
-        background-image: url(../images/icon-envelope.svg);
-        background-size: contain;
         align-items: center;
-        }
+        fill: currentColor;
+    }
 
-    .header .contacts .icon-phone {
-        display: inline-block;
-        width: 10px;
-        height: 16px;
-        margin-right: 10px;
-        text-align: center;
-        background-image: url(../images/icon-phone.svg);
-        background-size: contain;
-        align-items: center;
-        }*/
 
-    .item-icon::before {
+    .contacts .item + .item {margin-left: 30px;}
+
+    /*.item-icon::before {
         display: inline-flex;
         content: "";
         margin-right: 10px;
@@ -155,7 +144,7 @@ img {
         align-items: center;
     }
 
-    .item-icon:first-of-type::before{ 
+    /*.item-icon:first-of-type::before{ 
         width: 16px;  
         height: 12px;    
         background-image: url(../images/icon-envelope.svg);}
@@ -163,7 +152,7 @@ img {
     .item-icon:last-of-type::before{ 
         width: 10px;  
         height: 16px;          
-        background-image: url(../images/icon-phone.svg);}
+        background-image: url(../images/icon-phone.svg);}*/
 
 
     /*Hero*/ 
@@ -171,7 +160,6 @@ img {
     .hero {
         text-align: center;
         max-width: 1600px; 
-        /*height: 600px;*/
         margin-left: auto;
         margin-right: auto;
         padding-top: 200px;
@@ -291,6 +279,9 @@ img {
 
     .paragraph-features {margin: 0;}
 
+
+
+
     /*Work*/
 
     .work.section {
@@ -309,6 +300,8 @@ img {
     .work .item {
         height: 294px;
         width: 370px;}
+
+
 
     /*Eployees*/
 
@@ -336,6 +329,7 @@ img {
         background-color: var(--primary-white-color);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+        padding-bottom: 30px;
     }
 
     .eployees-card .position {
@@ -352,6 +346,43 @@ img {
     }
 
     .eployees-card .item + .item {margin-left: 30px;}
+
+    .eployees .social-networks {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        justify-content: center;
+    }
+
+ 
+    .eployees .social-networks .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        margin: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        
+        /*color: #afb1b8;*/
+    }
+
+    .eployees .social-networks .item:hover .icon {
+        background-color: #2196F3;
+        color: var(--primary-white-color);
+    }
+
+    .eployees .social-networks .item:nth-child(-n + 3) {margin-right: 10px;}
+
+    .eployees .social-networks .item .icon {
+        fill: currentColor;}
+
+    .eployees .social-networks .item .icon:hover {
+        color: var(--primary-white-color);
+    }
+
 
     /*Footer*/
 
@@ -421,7 +452,6 @@ img {
             justify-content: center;
             min-width: 611px;
             margin-bottom: 50px;
-
         }
 
         .filters .item + .item {margin-left: 8px;}
@@ -462,12 +492,6 @@ img {
     }
 
     .card .item {
-        /*не получается сделать ширину через калькулятор, карточка сама по себе становится шире*/
-        /*видео 1 час 27 мин*/
-        /*width: calc((100%-60px)/3); 
-        /*background-color: tomato;
-        margin-right: 10px;*/
-
         width: 370px;
         margin-right: 30px;
         margin-bottom: 30px;
