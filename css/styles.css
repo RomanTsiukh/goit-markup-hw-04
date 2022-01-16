@@ -360,17 +360,8 @@ img {
 
  
     .eployees .social-networks .item {
-        /*display: flex;*/
-        /*justify-content: center;*/
-        /*align-items: center;*/
         width: 44px;
         height: 44px;
-        /*padding: 0;
-        margin: 0;
-        border-radius: 50%;
-        cursor: pointer;*/
-        
-        /*color: #afb1b8;*/
     }
 
     .eployees ul{
@@ -379,19 +370,6 @@ img {
         padding: 0;
     }
 
-
-    /*.eployees .social-networks .link:hover .icon {
-        background-color: #2196F3;
-        color: var(--primary-white-color);
-    }
-
-    .social-networks .item:nth-child(-n + 3) {margin-right: 10px;}
-
-    /*.eployees .social-networks .item .icon {
-        fill: currentColor;}*/
-
-    /*.eployees .social-networks .item .icon:hover {
-        color: var(--primary-white-color);}*/
 
     .social {
         display: flex;
@@ -409,15 +387,17 @@ img {
         border-radius: 50%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;  
     }
 
-    .social-link:hover  {
-        background-color: var(--accent-color);
-    }
+    .social-icon{fill: #afb1b8;}
+
+    .social-link:hover {background-color: var(--accent-color);}
 
     .social-link:hover .social-icon:hover {background-color: var(--accent-color);}    
     .social-link:hover .social-icon:hover {fill: #FFFFFF;}
+
+
 
 
     /*Clients*/
