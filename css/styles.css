@@ -188,6 +188,18 @@ img {
 
     .feature.section {padding-bottom: 0;}
 
+    .feature .list {
+        display: flex;
+        justify-content:space-between}
+
+    .feature .title {
+        margin-bottom: 10px;
+        width: 270px;}
+
+    .feature .item-feature {
+        width: 270px;
+        min-height: 101px;}
+
     .feature-picture {
         display: flex;
         height: 120px;
@@ -200,18 +212,6 @@ img {
         display: block;
         height: 70px;
         width: 65,32px;}
-
-    .feature .list {
-        display: flex;
-        justify-content:space-between}
-
-    .feature .title {
-        margin-bottom: 10px;
-        width: 270px;}
-
-    .feature .item-feature {
-        width: 270px;
-        min-height: 101px;}
 
     .list .title {
         margin-top: 0px;
